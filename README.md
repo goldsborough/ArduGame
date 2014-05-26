@@ -10,16 +10,48 @@ Due to the way the ArduGame library is written, there are no restraints on the h
 
 The library is split up into the individual games, however the interface is very similar. Let ArduGame be any of the three games:
 
-1. Include the game header file and set up your pins
+1. Include the game header file
 
-```#include <ArduGame.h>
+```cpp
+#include <ArduGame.h>
+```
+2. Forward declare the callback function. It must:
+  * Return void
+  * Take a bool pointer pointer as its only argument
 
-/* Pin setup */```
+`void display(bool ** matrix);` 
 
+3. Create an instance of the Game. The required arguments are:
+  1. The number of rows
+  2. The number of columns
+  3. The callback function
+          
+`ArduGame game(8,8,display);`
 
-void display(bool ** matrix); 
+4. In the setup function, you will probably want to call the start()
+   member that all games have. It starts the game and is also used to
+   reset the whole system once the game is over. Call `stop()` to stop the
+   game.
 
+```cpp
 void setup()
 {
-
+  /* Other things */
+  
+  Serial.begin(9600); // Only needed for example callback
+  
+  game.start();
 }
+```
+5. Define the callback function. The game passes you a two dimensional array
+   with the same dimensions as you passed them in when creating the object. 
+   Do not delete the pointer, please. The code below will display the game in
+   the Serial monitor.
+
+
+```cpp
+void display(bool ** matrix)
+{
+  
+}
+```
