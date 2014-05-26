@@ -1,0 +1,9 @@
+Snake 		KEYWORD1
+gameOver 	KEYWORD2
+up 		KEYWORD2
+down 		KEYWORD2
+left 		KEYWORD2
+right		KEYWORD2
+move 		KEYWORD2
+setSpeed	KEYWORD2
+getSpeed	KEYWORD2
