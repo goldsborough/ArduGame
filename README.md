@@ -1,6 +1,6 @@
 # The ArduGame Libary
 
-The ArduGame library is an Arduino / C++ based library currently consisting of 3 games: Pong, Snake and Breakout. It provides very user friendly abstractions and interfaces whilst keeping the inner workings out of sight and out of mind.
+The ArduGame library is an Arduino / C++ based library currently consisting of 4 games: Pong, Snake, Breakout and Tetris. It provides very user friendly abstractions and interfaces whilst keeping the inner workings out of sight and out of mind.
 
 ## Compatibility 
 
