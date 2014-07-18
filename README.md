@@ -8,7 +8,7 @@ Due to the way the ArduGame library is written, there are no restraints on the h
 
 ## Usage
 
-The library is split up into the individual games, however the interface is very similar. Let ArduGame be any of the three games:
+The library is split up into the individual games, however the interface is very similar. Let ArduGame be any of the four games:
 
 1. Include the game header file
 
@@ -48,12 +48,4 @@ void setup()
    Do not delete the pointer, please. The code below will display the game in
    the Serial monitor.
 
-
-```cpp
-void display(bool ** matrix)
-{
-  
-}
-```
-
-Work in progress ...
+Work in progress.
