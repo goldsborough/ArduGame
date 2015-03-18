@@ -1,1 +1,1 @@
-# ArduGame Libary
+# ArduGame Library
